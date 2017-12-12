@@ -1,7 +1,37 @@
-header.masthead.d-flex
-	div.container.text-center.my-auto
-		h1.mb-1 Krishna Lake
-		h3.mb-5
-			em Krishna Lake provides a chance for the tourists to come closer to mother nature also it helps them to understand the vast potential in nature, villages and the farmers.
-		a.btn.btn-primary.btn-xl.js-scroll-trigger(href='#about') Find Out More
-	div.overlay
+#carousel-2.carousel.slide.carousel-fade(data-ride='carousel', data-interval='6000')
+	ol.carousel-indicators
+		li.active(data-target='#carousel-2', data-slide-to='0')
+		li(data-target='#carousel-2', data-slide-to='1')
+		li(data-target='#carousel-2', data-slide-to='2')
+	.carousel-inner(role='listbox')
+
+		.carousel-item.active
+			img.d-block.img-fluid(src='img/carousel_1.jpg')
+			.carousel-caption
+				div
+					h2 Camping / Home Stay
+					p Best and safe place for camping and home stay
+
+		.carousel-item
+			img.d-block.img-fluid(src='img/carousel_2.jpg')
+			.carousel-caption.justify-content-center.align-items-center
+				div
+					h2 Best night out experience.
+					p Spend best time with family and friends.
+
+		.carousel-item
+			img.d-block.img-fluid(src='img/carousel_3.jpg')
+			.carousel-caption.justify-content-center.align-items-center
+				div
+					h2 Relax and enjoy rural life
+					p Various outdoor activities available.
+
+
+	a.carousel-control-prev(href='#carousel-2', role='button', data-slide='prev')
+		span.carousel-control-prev-icon(aria-hidden='true')
+		span.sr-only Previous
+
+	a.carousel-control-next(href='#carousel-2', role='button', data-slide='next')
+		span.carousel-control-next-icon(aria-hidden='true')
+		span.sr-only Next
+// /.carousel
